@@ -1,53 +1,62 @@
-<html>
-    <head>
-        <script async src="https://www.googletagmanager.com/gtag/js?id=G-7FN7LEVWXD"></script>
-        <script>
-          window.dataLayer = window.dataLayer || [];
-          function gtag(){dataLayer.push(arguments);}
-          gtag('js', new Date());
 
-          gtag('config', 'G-7FN7LEVWXD');
-        </script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Run 3</title>
+	<meta id="viewport" name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-MENBM6GSNY"></script><script>function gtag(){dataLayer.push(arguments)}window.dataLayer=window.dataLayer||[],gtag("js",new Date),gtag("config","G-MENBM6GSNY")</script>
+	<script type="text/javascript" src="./Run3.js"></script>
+	<script>
+		window.addEventListener ("touchmove", function (event) { event.preventDefault (); }, { capture: false, passive: false });
+		if (typeof window.devicePixelRatio !='undefined' && window.devicePixelRatio > 2) {
+			var meta = document.getElementById ("viewport");
+			meta.setAttribute ('content', 'width=device-width, initial-scale=' + (2 / window.devicePixelRatio) + ', user-scalable=no');
+		}
+	</script>
+	<style>
+		html,body { margin: 0; padding: 0; height: 100%; overflow: hidden; }
+		#openfl-content { background: #000000; width: 100%; height: 100%; }
+		@font-face {
+			font-family: 'Comfortaa Bold';
+			src: url('font/COMFORTAA-BOLD.eot?#iefix') format('embedded-opentype'),
+			url('font/COMFORTAA-BOLD.woff') format('woff'),
+			url('font/COMFORTAA-BOLD.TTF') format('truetype'),
+			url('font/COMFORTAA-BOLD.svg#Comfortaa%20Bold') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Comfortaa';
+			src: url('font/Comfortaa.eot?#iefix') format('embedded-opentype'),
+			url('font/Comfortaa.woff') format('woff'),
+			url('font/Comfortaa.otf') format('truetype');
+			font-weight: normal;
+			font-style: normal;
+		}
+		@font-face {
+			font-family: 'Permanent Marker';
+			src: url('font/PERMANENTMARKER.eot?#iefix') format('embedded-opentype'),
+			url('font/PERMANENTMARKER.woff') format('woff'),
+			url('font/PERMANENTMARKER.TTF') format('truetype'),
+			url('font/PERMANENTMARKER.svg#Permanent%20Marker') format('svg');
+			font-weight: normal;
+			font-style: normal;
+		}
 
-      <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Run 3 | Seraph</title>
-    <link rel="shortcut icon" href="../../images/ico.ico" type="image/x-icon">
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background-color: black;
-      }
-    </style>
-            <script src="../../storage/js/cloak.js"></script>
-  </head>
-  <body>
-    <script src="/js/main.js"></script>
-    <div id="ruffle" width="100%" height="100%"></div>
-    <script>
-      function loadLocalRuffle() {
-          var script = document.createElement('script');
-          script.src = '../../storage/ruffle/ruffle.js';
-          document.body.appendChild(script);
-      }
-
-      var cdnScript = document.createElement('script');
-      cdnScript.src = 'https://unpkg.com/@ruffle-rs/ruffle';
-      cdnScript.onerror = loadLocalRuffle;
-      document.body.appendChild(cdnScript);
-    </script>
-    <script>
-      window.RufflePlayer = window.RufflePlayer || {};
-      window.addEventListener("load", (event) => {
-        const ruffle = window.RufflePlayer.newest();
-        const player = ruffle.createPlayer();
-        const container = document.getElementById("ruffle");
-        player.id = "player";
-        player.style.width = "100%";
-        player.style.height = "100%";
-        container.appendChild(player);
-        player.load("Run3.swf");
-      });
-    </script>
-  </body>
+	</style>
+	            <script src="../../storage/js/cloak.js"></script>
+</head>
+<body>
+	<script src="/js/main.js"></script>
+	<noscript>This webpage makes extensive use of JavaScript. Please enable JavaScript in your web browser to view this page.</noscript>
+	
+	<div id="openfl-content"></div>
+	
+	<script type="text/javascript">
+		lime.embed ("Run3", "openfl-content", 800, 600, { parameters: {} });
+	</script>
+	<script src="https://cdn.jsdelivr.net/gh/st39/sdk@main/api.js"></script>
+</body>
 </html>
